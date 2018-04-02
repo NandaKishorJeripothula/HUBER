@@ -6,7 +6,7 @@ import {StackNavigator} from 'react-navigation';
   
 
 const AppNavigator =StackNavigator({
-      Map: {screen:CropReport,
+      CropReport: {screen:CropReport,
       navigationOptions:({navigation})=>({
           title: 'HUBER-Crop Report',
           headerStyle:{
@@ -14,7 +14,6 @@ const AppNavigator =StackNavigator({
           }
       })              
       },
-    
     })
     
 export default class CropDetails extends React.Component{
@@ -30,7 +29,10 @@ render(){
             height: '100%',
         }}
         >  
-        <Text></Text>
+        <Text>Crop Name</Text>
+        <Text>Crop Owner/Farmer Name</Text>
+        <Text>Co-ords</Text>
+        <Text>Thing</Text>
         <View>
                 <Button
                 title="View Detailed Information !!! "
