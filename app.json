@@ -1,0 +1,12 @@
+{
+  "expo": {
+    "sdkVersion": "25.0.0",
+    "name":"HUBER",
+    "icon":"./logo.png",
+    "version":"1.0.0",
+    "orientation":"portrait",
+    "android":{
+      "package":"com.horticulture.HUBER"
+    }
+  }
+}
