@@ -1,10 +1,9 @@
 import React,{Component} from 'react';
 import {Text, View,Button,Image, StyleSheet} from 'react-native';
 import CropReport from './CropReport';
-
 import {StackNavigator} from 'react-navigation';
-  
-
+import markers from '../data/data';  
+console.log(markers);
 const AppNavigator =StackNavigator({
       CropReport: {screen:CropReport,
       navigationOptions:({navigation})=>({
@@ -17,10 +16,17 @@ const AppNavigator =StackNavigator({
     })
     
 export default class CropDetails extends React.Component{
+    constructor(){
+        super();
+        this.state={
+            markers:markers
+        }
+    }
 render(){
     const {navigate}= this.props.navigation;
-    
+    console.log(this.state.markers);
     return(
+       
         <View
         style={{
             flexDirection: 'column',
