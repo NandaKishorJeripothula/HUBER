@@ -38,7 +38,19 @@ render(){
         <Text>Crop Name</Text>
         <Text>Crop Owner/Farmer Name</Text>
         <Text>Co-ords</Text>
-        <Text>Thing</Text>
+        <Text>Things</Text><Text>Crop Name</Text>
+        <Text>Crop Owner/Farmer Name</Text>
+        <Text>Co-ords</Text>
+        <Text>Things</Text><Text>Crop Name</Text>
+        <Text>Crop Owner/Farmer Name</Text>
+        <Text>Co-ords</Text>
+        <Text>Things</Text><Text>Crop Name</Text>
+        <Text>Crop Owner/Farmer Name</Text>
+        <Text>Co-ords</Text>
+        <Text>Things</Text><Text>Crop Name</Text>
+        <Text>Crop Owner/Farmer Name</Text>
+        <Text>Co-ords</Text>
+        <Text>Things</Text>
         <View>
                 <Button
                 title="View Detailed Information !!! "

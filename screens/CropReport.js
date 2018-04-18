@@ -7,8 +7,10 @@ const Form = t.form.Form;
 
 const User = t.struct({
   email: t.String,
-  username: t.maybe(t.String),
-  password: t.String,
+  name: t.maybe(t.String),
+  remarks1: t.String,
+  remarks2: t.String,
+  remarks3: t.String,
   terms: t.Boolean
 });
 
@@ -38,14 +40,14 @@ const formStyles = {
 
 const options = {
   fields: {
-    email: {
-      error: 'Without an email address how are you going to reset your password when you forget it?'
+    Id: {
+      error: 'Enter the details'
     },
-    password: {
-      error: 'Choose something you use on a dozen other sites or something you won\'t remember'
+    remarks: {
+      error: 'Enter the details'
     },
     terms: {
-      label: 'Agree to Terms',
+      label: 'Enter the details',
     },
   },
   stylesheet: formStyles,
@@ -66,7 +68,7 @@ export default class CropReport extends Component {
           options={options}
         />
         <Button
-          title="Sign Up!"
+          title="Submit Report!"
           onPress={this.handleSubmit}
         />
       </View>
